@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import './Navbar.css'
 import { GiHamburgerMenu } from "react-icons/gi";
+import NavElement from './NavElement';
 
 function Navbar() {
     const [showNavbar, setShowNavbar] = useState(false)
@@ -22,7 +23,7 @@ function Navbar() {
             <div className={`nav-elements  ${showNavbar && 'active'}`}>
                 <ul>
                     <li>
-                        <NavLink to="/">Mindfulness</NavLink>
+                    <NavElement title="Mindfulness" />
                     </li>
                     <li>
                         <NavLink to="/blog">Autocompasión</NavLink>
