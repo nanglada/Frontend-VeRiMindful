@@ -67,7 +67,7 @@ body {
   }
 
   .nav-elements.active {
-    width: 270px;
+    width: calc(100% - 2rem);
   }
 
   .nav-elements ul {

@@ -12,14 +12,14 @@ function NavElement({ title, dropdown }: Props) {
     return (
         <div>
             <div className="group relative cursor-pointer">
-                <div className="flex items-center justify-between space-x-5 bg-white">
+                <div className="flex items-center justify-between space-x-5 bg-white hover:font-medium hover:underline hover:decoration-2 hover:underline-offset-8">
                     {
                         (dropdown.length !== 0) ? (
-                            <p className="menu-hover my-2 py-2 text-base text-black lg:mx-4 hover:font-medium hover:underline hover:decoration-2 hover:underline-offset-8">
+                            <p className="menu-hover my-2 py-2 text-base text-black lg:mx-4">
                                 {title}
                             </p>
                         ) : (
-                            <Link to={"/" + title.toLowerCase()} className="menu-hover my-2 py-2 text-base text-black lg:mx-4 hover:font-medium hover:underline hover:decoration-2 hover:underline-offset-8">
+                            <Link to={"/" + title.toLowerCase()} className="menu-hover my-2 py-2 text-base text-black lg:mx-4">
                                 {title}
                             </Link>
                         )
