@@ -33,7 +33,7 @@ body {
 }
 
 .nav-elements ul li:not(:last-child) {
-  margin-right: 2rem;
+  margin-right: 0.5rem;
 }
 
 .nav-elements ul a {
@@ -41,15 +41,6 @@ body {
   font-weight: 400;
   color: #2f234f;
   text-decoration: none;
-}
-
-.nav-elements ul :hover {
-    color: #574c4c;
-    font-weight: 500;
-    position: relative;
-    text-decoration: underline 2px;
-    text-underline-position: under;
-    text-underline-offset: 2px;
 }
 
 

@@ -1,8 +1,27 @@
+
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import './Navbar.css'
 import { GiHamburgerMenu } from "react-icons/gi";
 import NavElement from './NavElement';
+
+let mindfulnessDrop:Array<Array<string>> = [
+    ["Mindfulness 1", "/mindfulness1"],
+    ["Mindfulness 2", "/mindfulness1"],
+    ["Mindfulness 3", "/mindfulness1"]
+]
+let selfcompassionDrop:Array<Array<string>> = [
+    ["Selfcompassion 1", "/Selfcompassion1"],
+    ["Selfcompassion 2", "/Selfcompassion2"],
+    ["Selfcompassion 3", "/Selfcompassion3"]
+]
+
+let resourcesDrop:Array<Array<string>> = [
+    ["Recomendaciones de libros", "/libros"],
+    ["Poemas", "/poemas"],
+    ["Audios", "/audios"],
+    ["Videos", "/videos"]
+]
 
 function Navbar() {
     const [showNavbar, setShowNavbar] = useState(false)
@@ -23,25 +42,25 @@ function Navbar() {
             <div className={`nav-elements  ${showNavbar && 'active'}`}>
                 <ul>
                     <li>
-                    <NavElement title="Mindfulness" />
+                        <NavElement title="Mindfulness" dropdown={mindfulnessDrop}/>
                     </li>
                     <li>
-                        <NavLink to="/blog">Autocompasión</NavLink>
+                        <NavElement title="Autocompasión" dropdown={selfcompassionDrop}/>
                     </li>
                     <li>
-                        <NavLink to="/projects">Recursos</NavLink>
+                        <NavElement title="Quién soy" dropdown={[]}/>
                     </li>
                     <li>
-                        <NavLink to="/about">Cursos</NavLink>
+                        <NavElement title="Cursos" dropdown={[]}/>
                     </li>
                     <li>
-                        <NavLink to="/contact">Quien soy</NavLink>
+                        <NavElement title="Artículos" dropdown={[]}/>
                     </li>
                     <li>
-                        <NavLink to="/about">Artículos</NavLink>
+                        <NavElement title="Organizaciones" dropdown={[]}/>
                     </li>
                     <li>
-                        <NavLink to="/contact">Organizaciones</NavLink>
+                        <NavElement title="Recursos" dropdown={resourcesDrop}/>
                     </li>
                 </ul>
             </div>
