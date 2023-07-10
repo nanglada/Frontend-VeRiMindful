@@ -12,7 +12,7 @@ function NavElement({ title, dropdown }: Props) {
     return (
         <div>
             <div className="group relative cursor-pointer">
-                <div className="flex items-center justify-between space-x-5 bg-white hover:font-medium hover:underline hover:decoration-2 hover:underline-offset-8">
+                <div className="flex items-center justify-between space-x-5 bg-white hover:underline hover:decoration-2 hover:underline-offset-8">
                     {
                         (dropdown.length !== 0) ? (
                             <p className="menu-hover my-2 py-2 text-base text-black lg:mx-4">
@@ -29,7 +29,7 @@ function NavElement({ title, dropdown }: Props) {
                 </div>
                 {
                     (dropdown.length !== 0) ? (
-                        <div className="invisible absolute z-50 text-center flex flex-col py-1 text-gray-800 shadow-xl group-hover:visible">
+                        <div className="invisible absolute z-50 flex flex-col py-1 shadow group-hover:visible">
                         {
                             dropdown.map((drop: Array<string>, index: any) =>
                                 <div key={index}>
