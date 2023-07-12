@@ -1,5 +1,6 @@
 import Navbar from "../page/Navbar"
-import Carrousel from "./Carrousel"
+import Carrousel from "./Carrousel/Carrousel"
+import Courses from "./Courses"
 
 function Landing() {
 
@@ -7,6 +8,7 @@ function Landing() {
     <>
     <Navbar/>
     <Carrousel/>
+    <Courses/>
     </>
   )
 }

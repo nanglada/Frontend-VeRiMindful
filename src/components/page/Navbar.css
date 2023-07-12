@@ -67,6 +67,7 @@ body {
     height: calc(100vh - 60px);
     transition: all 0.3s ease-in;
     overflow: hidden;
+    z-index: 500;
   }
 
   .nav-elements.active {
@@ -76,11 +77,13 @@ body {
   .nav-elements ul {
     display: flex;
     flex-direction: column;
+    z-index: 500;
   }
 
   .nav-elements ul li {
     margin-right: unset;
     margin-top: 22px;
+    z-index: 500;
   }
 }
 
