@@ -4,16 +4,16 @@ import './Navbar.css'
 import { GiHamburgerMenu } from "react-icons/gi";
 import NavElement from './NavElement';
 
-let mindfulnessDrop:Array<Array<string>> = [
-    ["Mindfulness 1", "/mindfulness1"],
-    ["Mindfulness 2", "/mindfulness1"],
-    ["Mindfulness 3", "/mindfulness1"]
-]
-let selfcompassionDrop:Array<Array<string>> = [
-    ["Selfcompassion 1", "/Selfcompassion1"],
-    ["Selfcompassion 2", "/Selfcompassion2"],
-    ["Selfcompassion 3", "/Selfcompassion3"]
-]
+// let mindfulnessDrop:Array<Array<string>> = [
+//     ["Mindfulness 1", "/mindfulness1"],
+//     ["Mindfulness 2", "/mindfulness1"],
+//     ["Mindfulness 3", "/mindfulness1"]
+// ]
+// let selfcompassionDrop:Array<Array<string>> = [
+//     ["Selfcompassion 1", "/Selfcompassion1"],
+//     ["Selfcompassion 2", "/Selfcompassion2"],
+//     ["Selfcompassion 3", "/Selfcompassion3"]
+// ]
 
 let resourcesDrop:Array<Array<string>> = [
     ["Recomendaciones de libros", "/libros"],
@@ -41,10 +41,10 @@ function Navbar() {
             <div className={`nav-elements  ${showNavbar && 'active'}`}>
                 <ul>
                     <li>
-                        <NavElement title="Mindfulness" dropdown={mindfulnessDrop}/>
+                        <NavElement title="Mindfulness" dropdown={[]}/>
                     </li>
                     <li>
-                        <NavElement title="Autocompasión" dropdown={selfcompassionDrop}/>
+                        <NavElement title="Autocompasión" dropdown={[]}/>
                     </li>
                     <li>
                         <NavElement title="Quién soy" dropdown={[]}/>
