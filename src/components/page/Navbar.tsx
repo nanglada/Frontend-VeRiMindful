@@ -3,6 +3,7 @@ import { useState } from 'react'
 import './Navbar.css'
 import { GiHamburgerMenu } from "react-icons/gi";
 import NavElement from './NavElement';
+import Logo from './../../assets/logo-transparente.png';
 
 // let mindfulnessDrop:Array<Array<string>> = [
 //     ["Mindfulness 1", "/mindfulness1"],
@@ -32,8 +33,9 @@ function Navbar() {
     return (
     <nav className="navbar">
         <div className="container">
-            <div className="logo">
-                VeRiMindful
+            <div className="flex">
+                <img className='h-12' src={Logo}/>
+                <p id="logo" className='ml-2 py-2 text-2xl'>VeRiMindful</p>
             </div>
             <div className="menu-icon" onClick={handleShowNavbar}>
                 <GiHamburgerMenu/>

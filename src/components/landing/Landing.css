@@ -15,37 +15,21 @@
 }
 
 .carousel-div {
-    height: 40rem;
+    height: 20rem;
     width: 100%; 
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #first {
-    background-image: url("../../assets/fondo1.jpg");
-}
-
-#second {
-    background-image: url("../../assets/fondo3.jpg");
-}
-
-#third {
-    background-image: url("../../assets/fondo4.jpg");
-}
-
-#fourth {
-    background-image: url("../../assets/fondo5.jpg");
-}
-
-#fifth {
-    background-image: url("../../assets/fondo6.jpg");
+    background-image: url("../../assets/fondo1.jpeg");
+    
 }
 
 #sixth {
-    background-image: url("../../assets/fondo7.jpg");
-}
-
-#seventh {
-    background-image: url("../../assets/fondo8.jpg");
+    background-image: url("../../assets/fondo7.jpeg");
 }
 
 

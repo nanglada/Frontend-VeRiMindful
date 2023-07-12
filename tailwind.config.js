@@ -6,6 +6,10 @@ export default {
       height: {
         '128': '32rem',
         '136': '40rem'
+      },
+      fontFamily: {
+        'logo': ['Sniglet'],
+        'body': ['Cabin']
       }
     },
   },
