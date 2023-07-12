@@ -29,7 +29,7 @@ function NavElement({ title, dropdown }: Props) {
                 </div>
                 {
                     (dropdown.length !== 0) ? (
-                        <div className="invisible absolute z-50 flex flex-col py-1 shadow group-hover:visible">
+                        <div className="invisible absolute z-50 flex flex-col py-1 shadow group-hover:visible bg-white">
                         {
                             dropdown.map((drop: Array<string>, index: any) =>
                                 <div key={index}>

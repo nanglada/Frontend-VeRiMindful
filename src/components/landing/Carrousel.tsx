@@ -1,7 +1,6 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Fondo1 from "../../assets/fondo1.jpg";
 import Fondo3 from "../../assets/fondo3.jpg";
 import Fondo4 from "../../assets/fondo4.jpg";
 import Fondo5 from "../../assets/fondo5.jpg";
@@ -24,26 +23,29 @@ export default function Carrousel() {
       <div>
         <Slider {...settings}>
           <div>
-            <img className="h-136 w-full object-cover" src={Fondo1}/>
+            <div className="carousel-div" id="first">
+                <h3>¿QUÉ ES?</h3>
+                <h1>Mindfulness</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div className="carousel-div" id="second">
             
           </div>
-          <div>
-            <img className="h-136 w-full object-cover" src={Fondo3}/>
+          <div className="carousel-div" id="third">
+          
           </div>
-          <div>
-            <img className="h-136 w-full object-cover" src={Fondo4}/>
+          <div className="carousel-div" id="fourth">
+          
           </div>
-          <div>
-            <img className="h-136 w-full object-cover" src={Fondo5}/>
+          <div className="carousel-div" id="fifth">
+            
           </div>
-          <div>
-            <img className="h-136 w-full object-cover" src={Fondo6}/>
+          <div className="carousel-div" id="sixth">
+           
           </div>
-          <div>
-            <img className="h-136 w-full object-cover" src={Fondo7}/>
-          </div>
-          <div>
-            <img className="h-136 w-full object-cover" src={Fondo8}/>
+          <div className="carousel-div" id="seventh">
+          
           </div>
         </Slider>
       </div>
