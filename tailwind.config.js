@@ -10,6 +10,10 @@ export default {
       fontFamily: {
         'logo': ['Sniglet'],
         'body': ['Cabin']
+      },
+      textColor: {
+        'orange1': '#FB8500',
+        'blue1': '#219EBC'
       }
     },
   },
