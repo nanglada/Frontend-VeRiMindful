@@ -38,7 +38,7 @@ function Navbar() {
                 <p id="logo" className='ml-2 py-2 text-2xl'>VeRiMindful</p>
             </div>
             <div className="menu-icon" onClick={handleShowNavbar}>
-                <GiHamburgerMenu/>
+                <GiHamburgerMenu className="mr-2 h-6 w-6"/>
             </div>
             <div className={`nav-elements  ${showNavbar && 'active'}`}>
                 <ul>
