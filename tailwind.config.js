@@ -14,6 +14,10 @@ export default {
       textColor: {
         'orange1': '#FB8500',
         'blue1': '#219EBC'
+      },
+      colors: {
+        'orange1': '#FB8500',
+        'blue1': '#219EBC'
       }
     },
   },

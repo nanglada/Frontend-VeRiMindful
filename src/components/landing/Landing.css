@@ -25,11 +25,13 @@
 
 #first {
     background-image: url("../../assets/fondo1.jpeg");
+    box-shadow: inset 0 0 0 2000px rgb(33, 158, 188, 0.4);
     
 }
 
 #sixth {
     background-image: url("../../assets/fondo7.jpeg");
+    box-shadow: inset 0 0 0 2000px rgb(251, 133, 0, 0.4);
 }
 
 
