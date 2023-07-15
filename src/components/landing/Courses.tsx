@@ -12,7 +12,6 @@ export default function Courses() {
                 <p className="text-justify text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum quos quae voluptates repellat expedita possimus, facere fugiat deleniti laborum nulla maxime aspernatur libero optio eaque dolor nisi eum voluptatum tenetur!</p>
                 <p className="text-justify text-lg py-6">¡Anímate a inscribirte! Para saber más, haz <Link to='/cursos' className="text-blue1 font-semibold underline">click aquí</Link>. </p>
             </div>
-            <div className="h-48"/>
             
         </div>
     
