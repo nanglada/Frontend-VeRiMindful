@@ -32,7 +32,7 @@ function Landing() {
 
   useEffect(() => {
     async function fetchData(){
-        let res = await axios.get("/posts")
+        let res = await axios.get("/posts", { params: { category: 'Noticias' } })
         setNews(res.data)
         console.log(res.data)
         setLoading(false)

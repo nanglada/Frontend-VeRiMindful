@@ -14,9 +14,6 @@ export default function News({ news }: Props) {
                 {
                     news.map((element: any, index: number) =>
                         <>
-                        {
-                            console.log(element)
-                        }
                         <NewsColumn 
                             title={element.title}
                             text={element.content}
