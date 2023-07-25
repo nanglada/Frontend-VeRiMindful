@@ -5,8 +5,7 @@ export default function Mindfulness() {
     return (
         <>
         <Navbar/>
-        <div>
-        <div className="px-40 py-6 text-justify">
+        <div className="px-12 lg:px-40 py-6 text-justify">
         <h1 className="font-logo text-3xl mb-4 text-orange1">¿Qué es el Mindfulness?</h1>
         <p className="mb-2">Mindfulness significa ser conscientes en todo momento de nuestros pensamientos, sentimientos, 
             sensaciones corporales y del entorno que nos rodea, desde una perspectiva amable y curiosa.</p>
@@ -40,9 +39,9 @@ export default function Mindfulness() {
         <p className="mb-8">Cuando la atención no está enfocada en lo que está pasando, funcionamos en modo piloto automático. 
             Es decir, el cuerpo realiza actividades cotidianas, conocidas, pero la mente está en otro momento, 
             en otro lugar.</p>
-            </div>
+        </div>
         <div className="bg-blue1 text-white">
-        <div className="px-40 py-6 text-justify">
+        <div className="px-12 lg:px-40 py-6 text-justify">
         <h1 className="font-logo text-3xl mb-4">Lo que debes saber para comenzar a practicar</h1>
         <p className="mb-2"><strong>No necesitas comprar nada.</strong> Puedes practicar en cualquier lugar, todo lo que necesitas 
             es dedicar un poco de tiempo y espacio para practicar cada día.</p>
@@ -71,7 +70,7 @@ export default function Mindfulness() {
             a lo largo del día.</p>
         </div>
         </div>
-        <div className="px-40 py-6 text-justify mt-6">
+        <div className="px-12 lg:px-40 py-6 text-justify mt-6">
         <h1 className="font-logo text-3xl mb-4 text-orange1">Actitudes clave de la atención plena</h1>
         <p className="mb-2"><strong>No juzgar.</strong> Sé un testigo imparcial de tu propia experiencia. Toma conciencia de la 
             corriente constante de juzgar y reaccionar ante la experiencia interior y exterior.</p>
@@ -95,7 +94,7 @@ export default function Mindfulness() {
             preocupación por los otros.</p>
         </div>
         <div className="bg-blue1 text-white">
-        <div className="px-40 py-6 text-justify">
+        <div className="px-12 lg:px-40 py-6 text-justify">
         <h1 className="font-logo text-3xl mb-4">Efectos de la práctica regular de mindfulness en el cerebro</h1>
         <p className="mb-2">Está demostrado científicamente que el entrenamiento (meditación) constante  tiene un fuerte impacto en 
             nuestras funciones cognitivas y emocionales, y que modifica también nuestro cerebro a nivel tanto 
@@ -145,7 +144,7 @@ export default function Mindfulness() {
         </ol>
         </div>
         </div>
-        <div className="px-40 py-6 text-justify mt-6">
+        <div className="px-12 lg:px-40 py-6 text-justify mt-6">
         <h1 className="font-logo text-3xl mb-4 text-orange1">Beneficios de la práctica regular del Mindfulness</h1>
         <p className="mb-2">Neurológicos:</p>
         <ul className="ml-8">
@@ -177,11 +176,10 @@ export default function Mindfulness() {
         </div>
         
         <div className="bg-blue1 text-white">
-        <div className="px-40 py-6 text-justify">
+        <div className="px-12 lg:px-40 py-6 text-justify">
         <h1 className="font-logo text-3xl mb-4">Pasos en la práctica de Mindfulness</h1>
         <div className="flex justify-center items-center"> 
-            <img className="w-2/3" src={MindfulnessPoster}></img>
-        </div>
+            <img className="w-full lg:w-2/3" src={MindfulnessPoster}></img>
         </div>
         </div>
         </div>
