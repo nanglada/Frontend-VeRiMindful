@@ -22,7 +22,7 @@ export default function Carrousel() {
                 description='"La conciencia que surge de prestar atención, de forma intencional, a la experiencia tal y como es en el momento presente, sin juzgarla, sin evaluarla y sin reaccionar a ella" (R. Baer)'/>
         </div>
         <div>
-            <CarrouselDiv id="sixth" title={"¿Qué es la autocompasión?"} redirect="/autocompasion" white={true}
+            <CarrouselDiv id="sixth" title={"¿Qué es la autocompasión?"} redirect="/autocompasión" white={true}
                 description='"La autocompasión significa ser amable y comprensivo contigo mismo cuando te enfrentas a tus errores personales y a tu sufrimiento, en lugar de ignorarte, o lo que es peor, juzgarte y criticarte por tus deficiencias." (C. Germer)'/>
         </div>
         </Slider>

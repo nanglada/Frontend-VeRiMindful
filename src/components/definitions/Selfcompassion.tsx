@@ -181,33 +181,33 @@ export default function Selfcompassion() {
                 puede parecer antinatural y desencadenar creencias negativas. Sin embargo, la investigación 
                 científica ofrece una perspectiva diferente sobre estas ideas erróneas:</p>
             <ol className="ml-8">
-                <li className="mb-2">1. La Autocompasión es una forma de Lástima hacia uno mismo</li>
+                <li className="mb-2 font-bold">1. La Autocompasión es una forma de Lástima hacia uno mismo</li>
                 <p className="mb-2">No es lástima. Cuando las personas sienten lástima de sí mismas, se ven inmersas en sus propios 
                     problemas y se olvidan de que los demás tienen problemas similares. No hacen caso de sus 
                     interconexiones con otras personas, y creen que son los únicos en el mundo que están sufriendo.</p>
-                <li className="mb-2">2. La autocompasión significa debilidad</li>
+                <li className="mb-2 font-bold">2. La autocompasión significa debilidad</li>
                 <p className="mb-2">En vez de ser una debilidad, los investigadores están descubriendo que la autocompasión es una 
                     de las más poderosas fuentes de afrontamiento y resiliencia, que tenemos disponible para nosotros. 
                     Algunos estudios sugieren que no es solo importante cómo te enfrentas a la vida, sino cómo te 
                     relacionas contigo mismo cuando las cosas se ponen feas —como un aliado interno o un enemigo— lo 
                     que determina tu capacidad para afrontar dificultades exitosamente.</p>
-                <li className="mb-2">3. La autocompasión me hará autoindulgente</li>
+                <li className="mb-2 font-bold">3. La autocompasión me hará autoindulgente</li>
                 <p className="mb-2">No es autoindulgencia. La autocompasión es también muy diferente de la autoindulgencia. Muchas 
                     personas dicen que se resisten a ser autocompasivas, porque tienen miedo de dejarse llevar por 
                     cualquier impulso. Ser compasivo con uno mismo implica que quieres ser feliz y tener salud, 
                     también a largo plazo.</p>
-                <li className="mb-2">4. La autocompasión es lo mismo que la autoestima</li>
+                <li className="mb-2 font-bold">4. La autocompasión es lo mismo que la autoestima</li>
                 <p className="mb-2">En contraste con la autoestima, la autocompasión no se basa en la autoevaluación. La gente siente 
                     compasión por sí misma, porque todos los seres humanos merecen compasión y comprensión, no porque 
                     posean un conjunto particular de características (guapos, inteligentes, etc.). Esto significa que 
                     con la autocompasión, no tenemos que sentirnos superiores a los demás para estar bien con nosotros 
                     mismos.</p>
-                <li className="mb-2">5. La autocompasión es egoísta</li>
+                <li className="mb-2 font-bold">5. La autocompasión es egoísta</li>
                 <p className="mb-2">Aunque la autocompasión a veces se confunde con el egoísmo, los estudios de Marshall y sus colegas 
                     (2020) demuestran que los niveles más altos de autocompasión están relacionados con comportamientos 
                     y actitudes más generosos. Al tratarnos a nosotros mismos con amabilidad, alcanzamos el equilibrio 
                     interior, lo que nos permite atender mejor las necesidades de los demás.</p>
-                <li className="mb-2">6. Mina la motivación</li>
+                <li className="mb-2 font-bold">6. Mina la motivación</li>
                 <p className="mb-2">A menudo se asume erróneamente que una voz interior autocompasiva fomenta la pasividad. Sin embargo, 
                     como indica la investigación, la autocompasión está vinculada a altos niveles de motivación 
                     orientada al dominio, lo que se traduce en una menor procrastinación y una mayor inversión de 
@@ -309,29 +309,29 @@ export default function Selfcompassion() {
             <div className="px-12 lg:px-40 py-8 text-justify">
                 <h1 className="font-logo text-3xl mb-4">Algunos artículos clave sobre la autocompasión, escritos por Kristin Neff</h1>
                 <ol className="ml-8">
-                    <li className="mb-2"><Link to="https://self-compassion.org/women-fierce-self-compassion/">1. Por qué las 
+                    <li className="mb-2"><Link className="underline font-bold hover:text-blue1" to="https://self-compassion.org/women-fierce-self-compassion/">1. Por qué las 
                         mujeres necesitan una autocompasión feroz</Link></li>
                     <p className="mb-2">Neff habla en este artículo de lo importante que es para las mujeres tener una 
                         autocompasión feroz.</p>
-                    <li className="mb-2"><Link to="https://self-compassion.org/embracing-our-common-humanity-with-self-compassion/">2. 
+                    <li className="mb-2"><Link className="underline font-bold hover:text-blue1" to="https://self-compassion.org/embracing-our-common-humanity-with-self-compassion/">2. 
                         Abrazar nuestra humanidad común con autocompasión</Link></li> 
                     <p className="mb-2">En este artículo, Neff habla de la idea de abrazar nuestra humanidad común con autocompasión. 
                         Es importante recordar que los sentimientos de inadecuación y sufrimiento son universales, 
                         y algo que es una experiencia compartida. El reconocimiento de esta experiencia compartida 
                         nos ayuda a ser más comprensivos y a juzgar menos nuestras insuficiencias.</p>
-                    <li className="mb-2"><Link to="https://self-compassion.org/self-appreciation-the-flip-side-of-self-compassion/">3. 
+                    <li className="mb-2"><Link className="underline font-bold hover:text-blue1" to="https://self-compassion.org/self-appreciation-the-flip-side-of-self-compassion/">3. 
                         Autoapreciación: la otra cara de la autocompasión</Link></li> 
                     <p className="mb-2">A muchas personas les cuesta centrarse en sus rasgos positivos. La pregunta es ¿por qué? 
                         Los elogios y los cumplidos deberían ser algo que nos alegrara recibir, pero a muchos nos resulta incómodo 
                         aceptarlos. En este artículo, Neff habla de lo importante que es llegar a un punto en el que podamos 
                         celebrar nuestras cualidades admirables de forma saludable.</p>
-                    <li className="mb-2"><Link to="https://self-compassion.org/the-physiology-of-self-compassion/">4. La 
+                    <li className="mb-2"><Link className="underline font-bold hover:text-blue1" to="https://self-compassion.org/the-physiology-of-self-compassion/">4. La 
                         fisiología de la autocompasión</Link></li>
                     <p className="mb-2">La fisiología de la autocompasión se centra en investigaciones que demuestran que las personas que son 
                         autocompasivas tienen menos probabilidades de estar deprimidas, ansiosas y estresadas. Como resultado, 
                         tienen más probabilidades de ser felices, resilientes y optimistas sobre el futuro. En definitiva, 
                         quienes son autocompasivos experimentan una mejor salud mental.</p>
-                    <li className="mb-2"><Link to="https://www.mindful.org/the-transformative-effects-of-mindful-self-compassion/">5. Los efectos 
+                    <li className="mb-2"><Link className="underline font-bold hover:text-blue1" to="https://www.mindful.org/the-transformative-effects-of-mindful-self-compassion/">5. Los efectos 
                         transformadores de la autocompasión consciente</Link></li>
                     <p className="mb-2">El artículo "The Transformative Effects of Mindful Self-Compassion" es otro gran artículo, escrito por la 
                         Dra. Kristen Neff y el Dr. Christopher Germer.</p>
