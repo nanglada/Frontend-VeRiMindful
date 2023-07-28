@@ -8,16 +8,16 @@ export default function Us(){
         <Navbar/>
         <div className="mx-12">
         <div className="md:flex place-items-center">
-        <div className="w-1/3">
+        <div className="md:w-1/3">
             <div className="relative top-0 left-0 grid place-items-center">
             <img src={AboutMe} alt="Verónica Riera" className="z-20 mb-16 w-3/5 h-auto rounded-full relative top-0"/>
-            <div className="absolute top-36 bg-orange1 px-8 pb-2 w-4/5 rounded">
+            <div className="absolute md:top-[40%] top-12 bg-orange1 px-8 pb-2 w-4/5 rounded">
                 <h2 className="mt-36 text-center text-3xl font-logo">VERÓNICA RIERA</h2>
                 <p className="text-center text-xl">MSC Trained Teacher</p>
             </div>
             </div>
         </div>
-        <div className="md:w-2/3">
+        <div className="md:w-2/3 md:mt-0 mt-36">
             <h2 className="text-3xl text-blue1 font-logo text-left mb-4 md:mt-12">¿Quién soy?</h2>
             <p className="text-justify mb-2">
                 Cuando me piden que me presente en ámbitos laborales, digo que soy ingeniero 
