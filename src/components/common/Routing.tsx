@@ -12,7 +12,7 @@ function Routing() {
           <Route path={"/"} element={<Landing />}/>
           <Route path={"/mindfulness"} element={<Mindfulness />}/>
           <Route path={"/autocompasión"} element={<Selfcompassion />}/>
-          <Route path={"/us"} element={<Us />}/>
+          <Route path={"/quién soy"} element={<Us />}/>
       </Routes>
     </BrowserRouter>
   )
