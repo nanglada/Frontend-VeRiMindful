@@ -6,31 +6,19 @@ export default function Us(){
     return (
         <>
         <Navbar/>
-        <div>
+        <div className="mx-12">
         <div className="md:flex place-items-center">
-        <div className="grid place-items-center md:w-1/3 md:ml-16 mt-[60%] relative md:mt-24 mx-8 md:mx-0">
-            <img src={AboutMe} alt="Verónica Riera" className="z-20 w-2/3 h-auto rounded-full absolute mb-60"/>
-            
-
-            <div className="pb-4 rounded absolute w-full bg-orange1">
-                <h2 className="mt-44 text-center text-3xl font-logo">VERÓNICA RIERA</h2>
+        <div className="w-1/3">
+            <div className="relative top-0 left-0 grid place-items-center">
+            <img src={AboutMe} alt="Verónica Riera" className="z-20 mb-16 w-3/5 h-auto rounded-full relative top-0"/>
+            <div className="absolute top-36 bg-orange1 px-8 pb-2 w-4/5 rounded">
+                <h2 className="mt-36 text-center text-3xl font-logo">VERÓNICA RIERA</h2>
                 <p className="text-center text-xl">MSC Trained Teacher</p>
-                
             </div>
-            <ul className="list-disc">
-                <li>Profesora del programa de Autocompasión Consciente del Center for Mindful Self- Compassion</li>
-                <li>Ingeniero Comercial, Universidad de Chile</li>
-                <li>MBA, Universidad Católica</li>
-                <li>Diplomado en Mindfulness Relacional y Prácticas de Bienestar, Universidad Adolfo Ibáñez</li>
-                <li>Docente del Diplomado y Magister de Mindfulness Relacional y Autocompasión de la Universidad Adolfo Ibáñez</li>
-                <li>Docente talleres MSC Universidad Adolfo Ibáñez</li>
-                <li>Co-Gestora de BrotaConsult</li>
-                <li>Facilitadora de talleres mindfulness y autocompasión en organizaciones</li>
-                <li>Docente de Programas Mindfulness para Empresas de la Universidad Andrés Bello</li>
-            </ul>
+            </div>
         </div>
-        <div className="md:w-2/3 md:mx-12 mx-8">
-            <h2 className="text-3xl text-blue1 font-logo text-left mb-4 md:mt-12 mt-48">¿Quién soy?</h2>
+        <div className="md:w-2/3">
+            <h2 className="text-3xl text-blue1 font-logo text-left mb-4 md:mt-12">¿Quién soy?</h2>
             <p className="text-justify mb-2">
                 Cuando me piden que me presente en ámbitos laborales, digo que soy ingeniero 
                 comercial de formación, con más de 20 años de trabajo en cargos ejecutivos en 
@@ -59,7 +47,9 @@ export default function Us(){
                 alcanzaba mis objetivos o cometía un error y exigiéndome más allá de mis 
                 posibilidades, muchas veces. 
             </p>
-            <p className="text-justify mb-2">
+        </div>
+        </div>
+        <p className="text-justify">
                 Hoy, como ya lo han dicho muchas personas antes, entiendo, de verdad, que lo que 
                 soy actualmente, es debido a todo lo anterior; que todas las decisiones que tomé 
                 en el pasado fueron con la información, conocimiento y sabiduría que en este 
@@ -67,42 +57,18 @@ export default function Us(){
                 estilo de vida llegó cuando era el momento adecuado, cuando mi corazón y mi mente 
                 estaban preparados para experimentar la vida y no solo entenderla desde la razón y 
                 la eficiencia. 
-            </p>
-        </div>
-        </div>
-        {/* <div className="my-8 place-items-center mx-16">
-            <h1 className="text-3xl text-blue1 font-logo text-left mb-4">Mis antecedentes</h1>      
-            
-        <div className="flex">
-            <div>
-            <h2 className="text-xl font-semibold text-left mb-4 underline">Mis roles</h2>
-            <ul className="list-disc ml-4 marker:text-orange">
-                <li>Profesora del programa de Autocompasión Consciente del Center for Mindful Self- Compassion</li>
-                <li>Ingeniero Comercial, Universidad de Chile</li>
-                <li>MBA, Universidad Católica</li>
-                <li>Diplomado en Mindfulness Relacional y Prácticas de Bienestar, Universidad Adolfo Ibáñez</li>
-                <li>Docente del Diplomado y Magister de Mindfulness Relacional y Autocompasión de la Universidad Adolfo Ibáñez</li>
-                <li>Docente talleres MSC Universidad Adolfo Ibáñez</li>
-                <li>Co-Gestora de BrotaConsult</li>
-                <li>Facilitadora de talleres mindfulness y autocompasión en organizaciones</li>
-                <li>Docente de Programas Mindfulness para Empresas de la Universidad Andrés Bello</li>
+        </p>
+        <hr className="border-blue1 border-2 border my-8"/>
+        <ul className="list-disc ml-2 grid grid-cols-2">
+                <li className="mb-2">Profesora del programa de Autocompasión Consciente del Center for Mindful Self-Compassion</li>
+                <li className="mb-2">Ingeniero Comercial, Universidad de Chile</li>
+                <li className="mb-2">MBA, Universidad Católica</li>
+                <li className="mb-2">Diplomado en Mindfulness Relacional y Prácticas de Bienestar, Universidad Adolfo Ibáñez</li>
+                <li className="mb-2">Docente del Diplomado y Magister de Mindfulness Relacional y Autocompasión de la UAI</li>
+                <li className="mb-2">Docente talleres MSC Universidad Adolfo Ibáñez</li>
+                <li className="mb-2">Facilitadora de talleres mindfulness y autocompasión en organizaciones</li>
+                <li className="mb-2">Docente de Programas Mindfulness para Empresas de la Universidad Andrés Bello</li>
             </ul>
-            </div>
-            <div>
-            <h2 className="text-xl font-semibold text-left mb-4 underline">Cursos, seminarios y otras formaciones</h2>
-            <ul className="list-disc ml-4 marker:text-orange">
-                <li>Curso Neurociencia “La Mente como aliado”, Nazareth Castellanos, 2022</li>
-                <li>Programa MBSR, 8 semanas, Carla García, 2020</li>
-                <li>Curso Formando Directores de Empresas, Universidad Adolfo Ibáñez, 2019</li>
-                <li>Mindful Self-Compassion Teacher Training, Center for Mindfulf Self-Compassion y AEMIND, Madrid, España, 2018</li>
-                <li>Introducción a la Psicología Budista, Instituto Mindfulness, 2018</li>
-                <li>Curso Terapia Centrada en la Compasión, Universidad Austral de Chile, 2017</li>
-                <li>Entrenamiento de Mindfulness y Autocompasión AEMIND (Bilbao, España), 2016</li>
-                <li>Taller Introducción de Mindfulness, Instituto de Mindfulness, 2014</li>
-            </ul>
-            </div>
-        </div>
-        </div> */}
         </div>
         </>
     )
