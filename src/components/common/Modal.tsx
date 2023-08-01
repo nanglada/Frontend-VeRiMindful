@@ -11,7 +11,7 @@ interface Props {
     subtitle: string
 }
 
-export default function Modal({ open, title, subtitle, text, button, contact }: Props) {
+export default function Modal({ open, title, subtitle, text, contact }: Props) {
   const [showModal, setShowModal] = React.useState(false);
   return (
     <>

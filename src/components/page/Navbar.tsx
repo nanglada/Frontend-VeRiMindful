@@ -6,17 +6,6 @@ import NavElement from './NavElement';
 import Logo from './../../assets/logo-transparente.png';
 import { Link } from 'react-router-dom';
 
-// let mindfulnessDrop:Array<Array<string>> = [
-//     ["Mindfulness 1", "/mindfulness1"],
-//     ["Mindfulness 2", "/mindfulness1"],
-//     ["Mindfulness 3", "/mindfulness1"]
-// ]
-// let selfcompassionDrop:Array<Array<string>> = [
-//     ["Selfcompassion 1", "/Selfcompassion1"],
-//     ["Selfcompassion 2", "/Selfcompassion2"],
-//     ["Selfcompassion 3", "/Selfcompassion3"]
-// ]
-
 let resourcesDrop:Array<Array<string>> = [
     ["Recomendaciones de libros", "/libros"],
     ["Poemas", "/poemas"],

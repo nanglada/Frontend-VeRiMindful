@@ -4,6 +4,7 @@ import Navbar from "../page/Navbar"
 import IMAGEn from "../../assets/fondo1.jpeg"
 import Modal from "../common/Modal";
 import CourseDescription from "./CourseDescription"
+import { Link } from "react-router-dom";
 
 let courses = [
     {"title": "Curso de Mindfulness Introductorio", "contact": "veronicarieram@gmail.com", "sessions": 8, "valid": true, "format": "Online", "dates": "20, 27 julio - 3, 10 agosto", "hour": "18:00", 
@@ -50,7 +51,16 @@ export default function Courses(){
                     
                 )
                 }
+                
         </div>
+        {/* {
+            (admin) ? ( */}
+            <>
+                <p className="mx-32">Hola Verónica. ¿Quieres agregar un curso nuevo? 
+                    Haz <Link to="/nuevo curso" className="underline text-blue1 hover:font-semibold">click aquí</Link></p>
+            </>
+            {/* ) : null
+        } */}
         </>
     )
 }
