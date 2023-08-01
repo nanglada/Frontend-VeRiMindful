@@ -3,6 +3,7 @@ import Landing from '../landing/Landing';
 import Mindfulness from '../definitions/Mindfulness';
 import Selfcompassion from '../definitions/Selfcompassion';
 import Us from '../aboutus/Us';
+import Courses from '../courses/Courses';
  
 function Routing() {
 
@@ -13,6 +14,7 @@ function Routing() {
           <Route path={"/mindfulness"} element={<Mindfulness />}/>
           <Route path={"/autocompasión"} element={<Selfcompassion />}/>
           <Route path={"/quién soy"} element={<Us />}/>
+          <Route path={"/cursos"} element={<Courses />}/>
       </Routes>
     </BrowserRouter>
   )
