@@ -41,7 +41,7 @@ export default function Courses(){
                         <Modal open={<CourseDescription course={course} index={index}/>}
                                 title={`${course.title} (formato ${course.format})`}
                                 text={course.description}
-                                button="Inscríbete"
+                                contact={`Consulta el precio y más detalles por WhatsApp o correo (${course.contact}).`}
                                 subtitle={`Horario ${course.hour} durante ${course.sessions} sesiones (${course.dates})`}/>
                         </>
                     ) : null

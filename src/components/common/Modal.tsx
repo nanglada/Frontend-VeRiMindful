@@ -1,15 +1,17 @@
 // https://www.creative-tim.com/learning-lab/tailwind-starter-kit/documentation/react/modals/regular
 import React from "react";
+import { BsWhatsapp } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 interface Props {
     open: any,
     title: string,
     text: string,
-    button: string,
+    contact: string,
     subtitle: string
 }
 
-export default function Modal({ open, title, subtitle, text, button }: Props) {
+export default function Modal({ open, title, subtitle, text, button, contact }: Props) {
   const [showModal, setShowModal] = React.useState(false);
   return (
     <>
@@ -47,6 +49,11 @@ export default function Modal({ open, title, subtitle, text, button }: Props) {
                     {text}
                   </p>
                 </div>
+                <div className="relative pb-4 px-12 flex-auto">
+                  <p className="leading-relaxed text-justify">
+                    {contact}
+                  </p>
+                </div>
                 {/*footer*/}
                 <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
                   <button
@@ -56,13 +63,14 @@ export default function Modal({ open, title, subtitle, text, button }: Props) {
                   >
                     Cerrar
                   </button>
-                  <button
-                    className="bg-blue1 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                    type="button"
-                    onClick={() => setShowModal(false)}
+                  <Link
+                    className="bg-blue1 text-white font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                    to="https://wa.me/56997797374"
                   >
-                    {button}
-                  </button>
+                    <div className="flex">
+                        Consultar <BsWhatsapp className="ml-2 mt-0.5"/>
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>
