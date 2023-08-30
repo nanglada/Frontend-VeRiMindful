@@ -43,10 +43,12 @@ export default function Selfcompassion() {
         <>
         <Navbar/>
         <div className="px-12 lg:px-40 py-8 text-justify">
-            <h1 className="font-logo text-3xl mb-4 text-blue1">¿Qué es la Autocompasión?</h1>
+            <h1 className="font-logo text-3xl mb-4 text-blue1 px-6">¿Qué es la Autocompasión?</h1>
+            <div className="grid grid-cols-2">
+                <div className="px-6">
             <p className="mb-2">Tener compasión por uno mismo o Autocompasión, no es realmente diferente de tener compasión por 
                 los demás. Piensa en lo que se siente en una experiencia de compasión:</p>
-            <ul className="ml-8">
+            <ul>
                 <li className="mb-2">• En primer lugar, para tener compasión por los demás, debes notar que están sufriendo. 
                     Si no haces caso, por ejemplo, a esa persona sin hogar que está en la calle, no puedes 
                     sentir compasión por lo difícil que debe ser su experiencia vital.</li> 
@@ -66,11 +68,14 @@ export default function Selfcompassion() {
                 condición humana, una realidad compartida por todos nosotros. Cuanto más abres tu corazón a esta 
                 realidad en lugar de estar constantemente luchando contra ella, más capaz serás de sentir compasión 
                 por ti mismo y todos tus congéneres en la experiencia de la vida.</p>
-            <p className="mb-2">Cuando aliviamos nuestro propio dolor, activamos el sistema mamífero de cuidado. Y una forma 
+                <p className="mb-2">Cuando aliviamos nuestro propio dolor, activamos el sistema mamífero de cuidado. Y una forma 
                 importante en que funciona este sistema es provocando la liberación de oxitocina. Las 
                 investigaciones indican que el aumento de los niveles de oxitocina incrementa en gran medida 
                 los sentimientos de confianza, calma, seguridad, generosidad y conexión, y facilita la 
-                capacidad de sentir calidez y compasión por nosotros mismos. La oxitocina se libera en 
+                capacidad de sentir calidez y compasión por nosotros mismos.</p>
+                </div>
+            <div>
+            <p className="mb-2">La oxitocina se libera en 
                 diversas situaciones sociales, como cuando una madre amamanta a su hijo, cuando los padres 
                 interactúan con sus hijos pequeños o cuando alguien da o recibe una caricia suave y tierna. 
                 Dado que los pensamientos y las emociones tienen el mismo efecto en nuestro cuerpo tanto si 
@@ -92,10 +97,14 @@ export default function Selfcompassion() {
                 del tacto. Al principio parece una tontería, pero el cuerpo no lo sabe. Simplemente responde al gesto 
                 físico de calidez y cariño, igual que un bebé responde al abrazo de su madre.  Recuerda que el 
                 contacto físico libera oxitocina, reduce el cortisol y calma el estrés cardiovascular.</p>
+                </div>
+        </div>
         </div>
         <div className="bg-orange1 text-black">
             <div className="px-12 lg:px-40 py-8 text-justify">
-                <h1 className="font-logo text-3xl mb-4">Investigación sobre la práctica de autocompasión</h1>
+                <h1 className="font-logo text-3xl mb-4 px-6">Investigación sobre la práctica de autocompasión</h1>
+                <div className="grid grid-cols-2">
+                    <div className="px-6">
                 <p className="mb-2">Gran parte de la investigación sobre la autocompasión se ha llevado a cabo utilizando la Escala 
                     de Autocompasión (SCS), que se diseñó para evaluar los niveles de rasgo de la autocompasión.</p>
                 <p className="mb-2">Esta escala se desarrolló para evaluar pensamientos, emociones y ciertos comportamientos asociados 
@@ -103,17 +112,20 @@ export default function Selfcompassion() {
                 <p className="mb-2">La escala incluye ítems como la medición de la frecuencia con la que las personas responden a 
                     sentimientos de inadecuación o sufrimiento. y también mide la atención plena, la autocompasión y 
                     el autojuicio.</p>
-                <p className="mb-2">Por ejemplo, alguien que se siente inadecuado puede juzgarse duramente a sí mismo cuando siente dolor 
+                    <p className="mb-2">Por ejemplo, alguien que se siente inadecuado puede juzgarse duramente a sí mismo cuando siente dolor 
                     emocional, en lugar de intentar ser cariñoso y amable.</p>
                 <p className="mb-2">El autojuicio puede entrar en juego cuando alguien juzga duramente sus propias insuficiencias y 
-                    defectos. La atención plena también entra en juego, ya que ayuda a adoptar un punto de vista más 
+                    defectos.</p>
+                    </div>
+                    <div>
+                <p className="mb-2">La atención plena también entra en juego, ya que ayuda a adoptar un punto de vista más 
                     equilibrado si ocurre algo doloroso.</p>
                 <p className="mb-2">Las respuestas de la escala se dan en una escala de 5 puntos, desde casi nunca hasta casi siempre.</p>
-                <p>La forma abreviada de la escala de autocompasión (SCS-SF) contiene 12 ítems en lugar de 26 y 
+                <p className="mb-2">La forma abreviada de la escala de autocompasión (SCS-SF) contiene 12 ítems en lugar de 26 y 
                     puede utilizarse con fines de investigación. La escala corta tiene una correlación casi perfecta 
                     con la escala más larga cuando se examinan las puntuaciones totales.</p>
                 <p className="mb-2">La escala mide ítems como:</p>
-                <ul className="ml-8">
+                <ul className="grid grid-cols-2">
                     <li className="mb-2">• Amabilidad con uno mismo</li>
                     <li className="mb-2">• Autojuicio</li>
                     <li className="mb-2">• Elementos de humanidad común</li>
@@ -121,6 +133,8 @@ export default function Selfcompassion() {
                     <li className="mb-2">• Elementos de atención plena</li>
                     <li className="mb-2">• Ítems de sobreidentificación</li>
                 </ul>
+                </div>
+            </div>
             </div>
         </div>
         <div className="px-12 lg:px-40 py-8 text-justify">
@@ -165,22 +179,29 @@ export default function Selfcompassion() {
         </div> 
         <div className="bg-orange1 text-black">
             <div className="px-12 lg:px-40 py-8 text-justify">
-                <h1 className="font-logo text-3xl mb-4">Los beneficios científicos de la autocompasión</h1>
+                <h1 className="font-logo text-3xl mb-4 px-6">Los beneficios científicos de la autocompasión</h1>
+                <div className="grid grid-cols-2">
+                <div className="px-6">
                 <p className="mb-2">La práctica de la autocompasión puede tener un efecto clave en la reducción de la evitación experiencial y el aumento de la flexibilidad psicológica, lo que a su vez puede influir en la ansiedad, la depresión y el bienestar general al promover la reducción de la evitación de experiencias difíciles.</p>
                 <p className="mb-2">Aunque podríamos equivocadamente asumir que las personas compasivas consigo mismas poseen naturalmente una personalidad más alegre o saben cómo evitar los sentimientos difíciles, la realidad es que la autocompasión sigue siendo beneficiosa para el bienestar mental incluso cuando se toma en cuenta la autocrítica y el bajo estado de ánimo. Esto se debe a que quienes la practican desarrollan la habilidad de reconocer cuando enfrentan dificultades.</p>
                 <p className="mb-2">La autoconciencia que se cultiva mediante la autocompasión permite que las personas se traten con amabilidad y enfrenten de manera más efectiva cualquier sentimiento de ansiedad que surja debido a situaciones complicadas.</p>
                 <p className="mb-2">La autocompasión puede empoderar a las personas, haciéndolas sentirse fuertes, competentes y con la convicción de que pueden alcanzar el éxito.</p> 
+                </div>
+                <div>
                 <p className="mb-2">Además, desarrollar la autocompasión fortalece la fuerza interior y la resiliencia. Al practicar la atención plena, uno puede reconocer y observar sentimientos de vergüenza o arrepentimiento sin quedar atrapado en ellos. Aceptar que todos cometemos errores puede ayudar a desarrollar fortaleza y resiliencia ante la adversidad.</p>
                 <p className="mb-2">Por último, la autocompasión es una valiosa herramienta de aprendizaje. Cuando enfrentamos un proyecto laboral que no cumple nuestras expectativas, la autocrítica puede minar nuestro desarrollo profesional. Sin embargo, si nos tratamos con autocompasión, adoptamos una actitud más comprensiva, similar a la que tendríamos con un amigo en una situación similar, evitando así caer en la desesperanza y el desánimo. Los estudios demuestran que las personas con autocompasión no sólo tienen más confianza en sí mismas, sino que son menos propensas a temer el fracaso y más propensas a intentarlo de nuevo cuando fracasan, y a persistir en sus esfuerzos por seguir aprendiendo.</p>
                 <p className="mb-2">En conclusión, los beneficios de la Autocompasión son significativos y nos ayuda a aprender y crecer frente a los desafíos que encontramos en la vida.</p>
+                </div>
+                </div>
             </div>
         </div>
         <div className="px-12 lg:px-40 py-8 text-justify">
-            <h1 className="font-logo text-3xl mb-4 text-blue1">¿Qué te viene a la mente cuando piensas en la frase "cultivar una voz interior autocompasiva"?</h1>
+            <h1 className="font-logo text-3xl mb-4 text-blue1 pl-6">¿Qué te viene a la mente cuando piensas en la frase "cultivar una voz interior autocompasiva"?</h1>
+            <div className="grid grid-cols-2">
+            <div className="px-6">
             <p className="mb-2">En el mundo moderno de hoy, donde el perfeccionismo suele ser la norma, ser amable con uno mismo 
                 puede parecer antinatural y desencadenar creencias negativas. Sin embargo, la investigación 
                 científica ofrece una perspectiva diferente sobre estas ideas erróneas:</p>
-            <ol className="ml-8">
                 <li className="mb-2 font-bold">1. La Autocompasión es una forma de Lástima hacia uno mismo</li>
                 <p className="mb-2">No es lástima. Cuando las personas sienten lástima de sí mismas, se ven inmersas en sus propios 
                     problemas y se olvidan de que los demás tienen problemas similares. No hacen caso de sus 
@@ -196,6 +217,9 @@ export default function Selfcompassion() {
                     personas dicen que se resisten a ser autocompasivas, porque tienen miedo de dejarse llevar por 
                     cualquier impulso. Ser compasivo con uno mismo implica que quieres ser feliz y tener salud, 
                     también a largo plazo.</p>
+            </div>
+            <div>
+                
                 <li className="mb-2 font-bold">4. La autocompasión es lo mismo que la autoestima</li>
                 <p className="mb-2">En contraste con la autoestima, la autocompasión no se basa en la autoevaluación. La gente siente 
                     compasión por sí misma, porque todos los seres humanos merecen compasión y comprensión, no porque 
@@ -212,12 +236,14 @@ export default function Selfcompassion() {
                     como indica la investigación, la autocompasión está vinculada a altos niveles de motivación 
                     orientada al dominio, lo que se traduce en una menor procrastinación y una mayor inversión de 
                     tiempo en la superación personal (Breines y Chen, 2012).</p>
-            </ol>
-
+            </div>
+            </div>
         </div>
         <div className="bg-orange1 text-black">
             <div className="px-12 lg:px-40 py-8 text-justify">
-            <h1 className="font-logo text-3xl mb-4">Los Componentes de la Autocompasión</h1>
+            <h1 className="font-logo text-3xl mb-4 px-6">Los Componentes de la Autocompasión</h1>
+            <div className="grid grid-cols-2">
+            <div className="px-6">
             <h3 className="font-bold underline text-xl mb-2">Autocompasión frente al autojuicio</h3>
             <p className="mb-2">La mayoría de nosotros tratamos de ser amables y comprensivos con nuestros amigos y 
                 seres queridos cuando se sienten mal consigo mismos o. Sin embargo, a menudo somos 
@@ -238,6 +264,8 @@ export default function Selfcompassion() {
                 mal y olvidamos que parte de ser humano significa enfrentarse a retos y ser vulnerable. Este 
                 sentimiento de anormalidad crea una aterradora sensación de desconexión y soledad que agrava 
                 nuestro sufrimiento.</p>
+            </div>
+            <div className="px-6">
             <p className="mb-2">La autocompasión, reconocemos que los retos de la vida forman parte del ser humano, 
                 una experiencia que todos compartimos. La compasión es, por definición, relacional. Implica una 
                 reciprocidad básica en la experiencia del sufrimiento y surge del reconocimiento de que la experiencia 
@@ -255,11 +283,14 @@ export default function Selfcompassion() {
                 menos absorbidos por ellos e identificados con ellos. Tenemos la perspectiva necesaria para 
                 sentir compasión por nuestras dificultades. Por esta razón, el mindfulness es el pilar sobre 
                 el que descansa la autocompasión.</p>
+                </div>
             </div>
-
+            </div>
         </div>
         <div className="px-12 lg:px-40 py-8 text-justify">
-            <h1 className="font-logo text-3xl mb-4 text-blue1">Programa Autocompasión Consciente -  MSC (Mindful Self-Compassion)</h1>
+            <h1 className="font-logo text-3xl mb-4 text-blue1 px-6">Programa Autocompasión Consciente -  MSC (Mindful Self-Compassion)</h1>
+            <div className="grid grid-cols-2">
+            <div className="px-6">
             <p className="mb-2">El curso Mindful Self-Compassion (MSC) es un programa de entrenamiento de apoyo empírico, 
                 de ocho semanas más una sesión de retiro, diseñado para cultivar la habilidad de la 
                 autocompasión o amor incondicional hacia uno mismo. Basado en la investigación innovadora 
@@ -279,6 +310,8 @@ export default function Selfcompassion() {
                 el bienestar emocional, disminuye la ansiedad, depresión y estrés, y ayuda al mantenimiento de 
                 hábitos saludables como dieta y ejercicio y a tener relaciones personales satisfactorias. Y es 
                 más fácil de lo que piensas.</p>
+            </div>
+            <div>
             <h3 className="font-bold underline text-xl mb-2">¿Qué puedes esperar?</h3>
             <p className="mb-2">Las actividades del programa incluyen meditaciones específicas, charlas cortas, 
                 ejercicios experienciales, compartir en grupo lo que se experimenta en los ejercicios y prácticas 
@@ -294,7 +327,7 @@ export default function Selfcompassion() {
                 Antes de registrarse los participantes deberían planificar el asistir a todas las sesiones 
                 y practicar mindfulness y autocompasión al menos 30 minutos al día durante el programa.</p>
             <p className="mb-2"><strong>Cuando el alumno finalice el curso se pretende que sea capaz de:</strong></p>
-            <ul className="ml-8">
+            <ul>
                 <li className="mb-2">• Practicar autocompasión en la vida diaria</li>
                 <li className="mb-2">• Comprender los beneficios con apoyo empírico de la autocompasión</li>
                 <li className="mb-2">• Motivarse a sí mismo con bondad, en lugar de criticarse</li>
@@ -303,12 +336,14 @@ export default function Selfcompassion() {
                 <li className="mb-2">• Manejar la fatiga del cuidador</li>
                 <li className="mb-2">• Saborear la vida y cultivar la felicidad</li>
             </ul>
-
+            </div>
+            </div>
         </div>
         <div className="bg-orange1 text-black">
             <div className="px-12 lg:px-40 py-8 text-justify">
-                <h1 className="font-logo text-3xl mb-4">Algunos artículos clave sobre la autocompasión, escritos por Kristin Neff</h1>
-                <ol className="ml-8">
+                <h1 className="font-logo text-3xl mb-4 px-6">Algunos artículos clave sobre la autocompasión, escritos por Kristin Neff</h1>
+                <div className="grid grid-cols-2">
+                <div className="px-6">
                     <li className="mb-2"><Link className="underline font-bold hover:text-blue1" to="https://self-compassion.org/women-fierce-self-compassion/">1. Por qué las 
                         mujeres necesitan una autocompasión feroz</Link></li>
                     <p className="mb-2">Neff habla en este artículo de lo importante que es para las mujeres tener una 
@@ -325,6 +360,8 @@ export default function Selfcompassion() {
                         Los elogios y los cumplidos deberían ser algo que nos alegrara recibir, pero a muchos nos resulta incómodo 
                         aceptarlos. En este artículo, Neff habla de lo importante que es llegar a un punto en el que podamos 
                         celebrar nuestras cualidades admirables de forma saludable.</p>
+                </div>
+                <div>
                     <li className="mb-2"><Link className="underline font-bold hover:text-blue1" to="https://self-compassion.org/the-physiology-of-self-compassion/">4. La 
                         fisiología de la autocompasión</Link></li>
                     <p className="mb-2">La fisiología de la autocompasión se centra en investigaciones que demuestran que las personas que son 
@@ -335,12 +372,13 @@ export default function Selfcompassion() {
                         transformadores de la autocompasión consciente</Link></li>
                     <p className="mb-2">El artículo "The Transformative Effects of Mindful Self-Compassion" es otro gran artículo, escrito por la 
                         Dra. Kristen Neff y el Dr. Christopher Germer.</p>
-                </ol>
                 <p className="mb-2">Los autores hablan de cómo la autocompasión, el reconocimiento de nuestra 
                 propia humanidad y la atención plena pueden darnos la fuerza para prosperar. La Dra. Neff se 
                 refiere a su propia experiencia personal con la autocompasión cuando habla del diagnóstico de 
                 autismo de su hijo y de cómo la autocompasión le ayudó a superarlo. Ser conscientes de nuestras 
                 propias luchas puede ayudarnos a responder a nosotros mismos con amabilidad y apoyo.</p>
+                </div>
+            </div>
             </div>
         </div>
         <div className="px-12 lg:px-40 py-8 text-justify">
