@@ -6,7 +6,9 @@ export default function Mindfulness() {
         <>
         <Navbar/>
         <div className="px-12 lg:px-40 py-8 text-justify">
-            <h1 className="font-logo text-3xl mb-4 text-orange1">¿Qué es el Mindfulness?</h1>
+            <h1 className="font-logo text-3xl mb-4 text-orange1 px-6">¿Qué es el Mindfulness?</h1>
+            <div className=" grid grid-cols-2 gap-4">
+            <div className="px-6">
             <p className="mb-2">Mindfulness significa ser conscientes en todo momento de nuestros pensamientos, sentimientos, 
                 sensaciones corporales y del entorno que nos rodea, desde una perspectiva amable y curiosa.</p>
             <p className="mb-2">La atención plena también implica aceptación, lo que significa que prestamos atención a nuestros 
@@ -21,9 +23,12 @@ export default function Mindfulness() {
                 atención plena en general y de los programas estandarizados en particular, inspirando innumerables 
                 programas para adaptar estos modelos a empresas, colegios, instituciones sanitarias,  prisiones, 
                 y otros ambientes.</p>
-            <p className="mb-2">Dicho lo anterior, es importante destacar que el Mindfulness no es una "técnica" ni se trata de 
+                <p className="mb-2">Dicho lo anterior, es importante destacar que el Mindfulness no es una "técnica" ni se trata de 
                 aprender a "controlar el estrés". Es una forma de vivir la vida tal y como es, y que está en 
-                cada uno de nosotros. Todos tenemos la capacidad de practicar mindfulness en nuestra vida cotidiana. 
+                cada uno de nosotros.</p>
+                </div>
+                <div>
+            <p className="mb-2">Todos tenemos la capacidad de practicar mindfulness en nuestra vida cotidiana. 
                 Practicar mindfulness formal y/o informal tan a menudo como podamos nos ayuda a aprender, en 
                 situaciones “normales” (cuando hay poco en juego), las habilidades que necesitamos para nuestra salud 
                 y bienestar general. De ese modo, cuando es mucho lo que está en juego -en momentos difíciles de cambio, 
@@ -39,10 +44,15 @@ export default function Mindfulness() {
             <p className="mb-8">Cuando la atención no está enfocada en lo que está pasando, funcionamos en modo piloto automático. 
                 Es decir, el cuerpo realiza actividades cotidianas, conocidas, pero la mente está en otro momento, 
             en otro lugar.</p>
+            </div>
+            </div>
         </div>
         <div className="bg-blue1 text-white">
             <div className="px-12 lg:px-40 py-8 text-justify">
-                <h1 className="font-logo text-3xl mb-4">Lo que debes saber para comenzar a practicar</h1>
+                <h1 className="font-logo text-3xl mb-4 px-6">Lo que debes saber para comenzar a practicar</h1>
+                <div className="grid grid-cols-2">
+                
+                <div className="px-6">
                 <p className="mb-2"><strong>No necesitas comprar nada.</strong> Puedes practicar en cualquier lugar, todo lo que necesitas 
                     es dedicar un poco de tiempo y espacio para practicar cada día.</p>
                 <p className="mb-2"><strong>No hay forma de silenciar o poner la mente en blanco.</strong> Ese no es el objetivo de la 
@@ -55,7 +65,10 @@ export default function Mindfulness() {
                     cuenta de que tu mente ha divagado, puedes traerla conscientemente de vuelta al momento presente. </p>
                 <p className="mb-2"><strong>Tu cerebro juicioso intentará tomar el control.</strong> Cuando practicamos la observación e 
                     investigación de nuestros juicios podemos aprender a elegir cómo vemos las cosas y cómo reaccionamos 
-                    ante ellas. Cuando practiques la atención plena, intenta no juzgarte por cualquier pensamiento que surja. 
+                    ante ellas. Cuando practiques la atención plena, intenta no juzgarte por cualquier pensamiento que surja.  </p>
+                </div>
+                <div>
+                <p className="mb-2">
                     Date cuenta de que surgen juicios, anótalos mentalmente y déjalos pasar, reconociendo las sensaciones que 
                     pueden dejar en tu cuerpo y dejándolas pasar también.</p>
                 <p className="mb-2"><strong>Se trata de volver una y otra vez al momento presente.</strong> Parece que nuestras mentes están 
@@ -68,10 +81,14 @@ export default function Mindfulness() {
                     cotidiano".</strong> Cuando practicamos mindfulness de un modo más informal, nos damos cuenta de nuestra 
                     experiencia cotidiana, momento a momento y llevamos nuestra atención a una cosa tantas veces como podemos 
                     a lo largo del día.</p>
+                    </div>
+                </div>
             </div>
         </div>
         <div className="px-12 lg:px-40 py-8 text-justify mt-6">
-            <h1 className="font-logo text-3xl mb-4 text-orange1">Actitudes clave de la atención plena</h1>
+            <h1 className="font-logo text-3xl mb-4 text-orange1 px-6">Actitudes clave de la atención plena</h1>
+            <div className="grid grid-cols-2">
+                <div className="px-6">
             <p className="mb-2"><strong>No juzgar.</strong> Sé un testigo imparcial de tu propia experiencia. Toma conciencia de la 
                 corriente constante de juzgar y reaccionar ante la experiencia interior y exterior.</p>
             <p className="mb-2"><strong>Paciencia.</strong> Una forma de sabiduría, la paciencia demuestra que aceptamos el hecho de que, 
@@ -80,8 +97,11 @@ export default function Mindfulness() {
                 posibilidades y nos impide estancarnos en la rutina de nuestra propia experiencia.</p>
             <p className="mb-2"><strong>Confianza.</strong> Desarrolle una confianza básica en sí mismo y en los propias emociones. Sepa 
                 que no pasa nada por cometer errores.</p>
-            <p className="mb-2"><strong>No esforzarse.</strong> El objetivo es estar contigo mismo aquí y ahora. Presta atención a lo que 
+                <p className="mb-2"><strong>No esforzarse.</strong> El objetivo es estar contigo mismo aquí y ahora. Presta atención a lo que 
                 ocurre sin intentar cambiar nada.</p>
+                </div>
+                <div>
+            
             <p className="mb-2"><strong>Aceptación.</strong> Ver las cosas como son. Esto prepara el terreno para actuar adecuadamente en 
                 tu vida, pase lo que pase.</p>
             <p className="mb-2"><strong>Soltar.</strong> Cuando prestamos atención a nuestra experiencia interior, descubrimos que hay 
@@ -92,10 +112,14 @@ export default function Mindfulness() {
             <p className="mb-8"><strong>Amabilidad.</strong> Una actitud amable y generosa para darnos a la vida, para hacer felices a los 
                 otros. Ser conscientes de la interconexión entre los seres y ser capaz de dar alegría y demostrar 
                 preocupación por los otros.</p>
+                </div>
+                </div>
         </div>
         <div className="bg-blue1 text-white">
             <div className="px-12 lg:px-40 py-8 text-justify">
-                <h1 className="font-logo text-3xl mb-4">Efectos de la práctica regular de mindfulness en el cerebro</h1>
+                <h1 className="font-logo text-3xl mb-4 px-6">Efectos de la práctica regular de mindfulness en el cerebro</h1>
+                <div className="grid grid-cols-2">
+                <div className="px-6">
                 <p className="mb-2">Está demostrado científicamente que el entrenamiento (meditación) constante  tiene un fuerte impacto en 
                     nuestras funciones cognitivas y emocionales, y que modifica también nuestro cerebro a nivel tanto 
                     estructural como molecular.</p> 
@@ -105,11 +129,11 @@ export default function Mindfulness() {
                 <p className="mb-2">Como tendencia solemos dejar a los sentimientos y pensamientos actuar de forma automática, decidir 
                     inconscientemente y juzgar, siendo en muchos casos este el origen de muchos de los conflictos.</p>
                 <p className="mb-2">Los cambios más representativos son los siguientes:</p>
-                <ol className="ml-8">
+                <ol>
                     <li className="mb-2">I. Regulación de la atención</li>
                     <p className="mb-2">Se ha observado la activación y fortalecimiento de áreas de la (i) corteza prefrontal y (ii) 
                         la corteza cingulada anterior y una mayor actividad del (iii) hipocampo (esto dos junto a la amígdala, corteza orbitofrontal, hipotálamo forman parte del sistema límbico).</p>
-                    <ol className="ml-8">
+                    <ol>
                         <li className="mb-2">(i) <strong>Corteza prefrontal:</strong> Se encuentra situada en la parte del cerebro más 
                         cercana al rostro. Se trata de un área cerebral de gran tamaño con una gran importancia a la hora de explicar el 
                         control conductual, la personalidad e incluso las capacidades cognitivas.</li>
@@ -118,7 +142,14 @@ export default function Mindfulness() {
                         las conexiones que establece, al representar un centro de enlace entre las estructuras antiguas y la neocorteza, 
                         o entre las actividades conscientes e inconscientes.</li>
                         <p className="mb-2">La corteza cingulada anterior (CCA) es la más estudiada. Se enciende como una especie de alarma 
-                        cuando distingue una situación en la que se requiere autocontrol y es como si dijera: "Atención, hay varias respuestas 
+                        cuando distingue una situación en la que se requiere autocontrol y es como si dijera:</p>
+                    </ol>
+                    </ol>
+                    </div>
+                
+                    <div>
+                    <ol>
+                    <p className="mb-2"> "Atención, hay varias respuestas 
                         para esta situación y algunas pueden no ser muy buenas”. Esta área siempre se activa independientemente de la decisión 
                         que se tome, motivo por el cual juega un papel importante en la función ejecutiva.</p>
                         <p className="mb-2">La corteza cingulada anterior resuelve el conflicto emocional suprimiendo la actividad de la amígdala lo que conduce 
@@ -126,13 +157,13 @@ export default function Mindfulness() {
                         <li className="mb-2">(iii) <strong>Hipocampo:</strong> El hipocampo tiene una función muy importante en los procesos 
                         mentales relacionados con la memoria y el aprendizaje, tanto en la memorización de experiencias e informaciones abstractas 
                         como en la recuperación de recuerdos. </li>
-                    </ol>
                     <li className="mb-2">II. Conciencia corporal</li>
                     <p className="mb-2">Las meditaciones de atención plena fortalecen la capacidad de percepción:</p>
-                    <ul className="ml-8">
+                    <ul>
                         <li className="mb-2">• Interior o interocepción, se mejora la empatía e intuición, se observan cambios en la corteza somatosensorial, ínsula y corteza cingulada.</li>
                         <li className="mb-2">• Exterior o exterocepción, facilita el contacto con otras personas, se encuentran implicadas las áreas de las neuronas espejo, lóbulo parietal, temporal y corteza prefrontal.</li>
                     </ul>
+                    
                     <li className="mb-2">III. Regulación emocional</li>
                     <p className="mb-2">El nivel superior del sistema límbico representa un puente conector entre los componentes de la psique inconsciente y 
                         los componentes de la cognición consciente. Este puente conector que da acceso a la conciencia se puede fortalecer a 
@@ -142,6 +173,8 @@ export default function Mindfulness() {
                         que podemos regular es la ansiedad, ya que, se reduce la actividad de la amígdala y se incrementa la actividad del 
                         hipocampo y la corteza cingulada posterior.</p>
                 </ol>
+                </div>
+            </div>
             </div>
         </div>
         <div className="px-12 lg:px-40 py-8 text-justify mt-6">
