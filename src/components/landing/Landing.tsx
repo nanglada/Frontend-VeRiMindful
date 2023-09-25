@@ -6,6 +6,7 @@ import News from "./News/News"
 import axios from "axios"
 import Loading from "../common/Loading"
 import Fact from "./Fact"
+import InstagramFeed from "./Instagram/Instagram"
 
 function Landing() {
 
@@ -31,7 +32,8 @@ function Landing() {
         <Carrousel/>
         <Courses/>
         <News news={news}/>
-        {/* <Fact/> */}
+        <InstagramFeed/>
+        <Fact/>
         </>
       ) : (
         <Loading/>
