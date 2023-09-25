@@ -5,6 +5,7 @@ import Selfcompassion from '../definitions/Selfcompassion';
 import Us from '../aboutus/Us';
 import Courses from '../courses/Courses';
 import NewCourse from '../courses/NewCourse';
+import News from '../news/News';
  
 function Routing() {
 
@@ -17,6 +18,7 @@ function Routing() {
           <Route path={"/quién soy"} element={<Us />}/>
           <Route path={"/cursos"} element={<Courses />}/>
           <Route path={"/nuevo curso"} element={<NewCourse />}/>
+          <Route path={"/artículos"} element={<News />}/>
       </Routes>
     </BrowserRouter>
   )

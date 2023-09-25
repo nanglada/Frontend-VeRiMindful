@@ -4,7 +4,7 @@ import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 
 
-export default function NewCourse() {
+export default function NewNews() {
 
     const { register, formState: { errors }, handleSubmit } = useForm();
 
