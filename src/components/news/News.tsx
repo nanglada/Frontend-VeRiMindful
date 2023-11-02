@@ -53,8 +53,8 @@ export default function News(){
         {/* {
             (admin) ? ( */}
             <>
-                <p className="mx-32">Hola Verónica. ¿Quieres agregar un curso nuevo? 
-                    Haz <Link to="/nuevo curso" className="underline text-blue1 hover:font-semibold">click aquí</Link></p>
+                <p className="mx-32">Hola Verónica. ¿Quieres agregar un artículo nuevo? 
+                    Haz <Link to="/nuevo artículo" className="underline text-blue1 hover:font-semibold">click aquí</Link></p>
             </>
             {/* ) : null
         } */}

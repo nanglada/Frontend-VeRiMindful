@@ -6,6 +6,7 @@ import Us from '../aboutus/Us';
 import Courses from '../courses/Courses';
 import NewCourse from '../courses/NewCourse';
 import News from '../news/News';
+import NewNews from '../news/NewNews';
  
 function Routing() {
 
@@ -19,6 +20,7 @@ function Routing() {
           <Route path={"/cursos"} element={<Courses />}/>
           <Route path={"/nuevo curso"} element={<NewCourse />}/>
           <Route path={"/artículos"} element={<News />}/>
+          <Route path={"/nuevo artículo"} element={<NewNews />}/>
       </Routes>
     </BrowserRouter>
   )

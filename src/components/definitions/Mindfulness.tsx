@@ -6,7 +6,7 @@ export default function Mindfulness() {
   return (
     <>
       <Navbar />
-      <div className="px-12 lg:px-40 space-x-1 py-8 flex">
+      <div className="px-12 lg:px-40 space-x-1 pt-8 pb-4 flex">
         <IndexButton
           title="¿Qué es el Mindfulness?"
           link="/mindfulness/#definicion"

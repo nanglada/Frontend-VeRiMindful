@@ -1,136 +1,106 @@
-import Navbar from "../page/Navbar";
-import { useForm } from "react-hook-form";
+import React, { useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
-import { Link, useNavigate } from "react-router-dom";
+import ReactQuill, { Quill } from "react-quill";
+import "react-quill/dist/quill.snow.css";
+import Navbar from "../page/Navbar";
 
+export default function CreatePost() {
+  let { category } = useParams();
+  let [post, setPost] = useState("");
+  let [error, setError] = useState<any>(null);
+  let navigate = useNavigate();
+  let [imageName, setImageName] = useState<File>();
 
-export default function NewNews() {
+  async function setImage(event: React.ChangeEvent<HTMLInputElement>) {
+    let files = event.target.files || [];
+    let file = files[0];
+    setImageName(file);
+  }
 
-    const { register, formState: { errors }, handleSubmit } = useForm();
+  async function sumbit(event: any) {
+    event.preventDefault();
+    try {
+      const form = new FormData();
+      console.log(post);
+      const json = new Blob([JSON.stringify(post)], {
+        type: "application/json",
+      });
+      form.append("post", json);
+      if (imageName) {
+        form.append("image", imageName);
+      }
 
-    // const navigate = useNavigate();
-
-    const onSubmit = async () => {
-        try {
-            let res = await axios.post("/posts", register);
-            console.log("funcionó!")
-            // await toast.success("Usuario registrado con éxito", {
-            //     position: toast.POSITION.TOP_CENTER
-            // });
-            //navigate('/');
-        } catch (err) {
-            // await toast.error("Ocurrió un error", {
-            //     position: toast.POSITION.TOP_CENTER
-            // });
-        }     
+      // let res = await axios.post("/post/", form, {
+      //     headers: { "Authorization": token }
+      // });
+      //navigate(`/publicacion/${category}/${res.data.data.id}`);
+    } catch (e) {
+      let message = (e as any)?.response?.data?.error || "Ocurrió un error.";
+      // setError(
+      //     <Alert variant="danger">
+      //         {message}
+      //     </Alert>
+      // );
     }
-    return (
-        <>
-        <Navbar/>
-        <div className="grid place-items-center mt-8">
-            <h1 className="text-2xl text-orange1">Agregar nuevo curso</h1>
-            <form onSubmit={handleSubmit(onSubmit)} className='w-3/5'>
-                
-                <div className='pt-6 grid place-items-center'>
-                <label className='text-sm'>Título del curso</label>
-                
-                    <input type="text"
-                        {...register("title", { required: true })}
-                        aria-invalid={errors.title ? "true" : "false"}
-                        className="text-black border border-black mb-2 px-2 py-1 w-full"
-                    />
-                    {errors.title?.type === 'required' && <p role="alert" className="text-xs text-black">Este campo es obligatorio.</p>}
-                </div>
-                
-                <div className='pt-6 grid place-items-center'>
-                <label className='text-sm'>Descripción del curso</label>
-                
-                    <textarea rows={8}
-                        {...register("description", { required: true })}
-                        aria-invalid={errors.description ? "true" : "false"}
-                        className="text-black border border-black mb-2 px-2 py-1 w-full"
-                    />
-                    {errors.description?.type === 'required' && <p role="alert" className="text-xs text-black">Este campo es obligatorio.</p>}
-                </div>
+  }
 
-                <div className='pt-6 grid place-items-center'>
-                <label className='text-sm'>Imagen del curso</label>
-                
-                    <input type="file" accept="image/*"
-                        {...register("image", { required: true })}
-                        aria-invalid={errors.image ? "true" : "false"}
-                        className="text-black border border-black mb-2 px-2 py-1 w-full"
-                    />
-                    {errors.image?.type === 'required' && <p role="alert" className="text-xs text-black">Este campo es obligatorio.</p>}
-                </div>
+  const rteChange = (content: any, delta: any, source: any, editor: any) => {
+    post = editor.getHTML();
+  };
 
-                <div className="grid grid-cols-2">
-                <div className='pt-6 grid place-items-center mr-2'>
-                <label className='text-sm'>Formato del curso</label>
+  const modules = {
+    toolbar: [
+      [{ size: [false, "large", "huge"] }],
+      ["bold", "italic", "underline"],
+      [{ list: "ordered" }, { list: "bullet" }],
+      [{ align: [] }],
+      ["clean"],
+      ["link"],
+    ],
+  };
 
-                    <select id="format"
-                        {...register("format", { required: true })}
-                        aria-invalid={errors.format ? "true" : "false"}
-                        className="text-black border border-black mb-2 px-2 py-1 w-full"
-                    >
-                        <option value="online">Online</option>
-                        <option value="presencial">Presencial</option>
-                    </select>
-                    {errors.format?.type === 'required' && <p role="alert" className="text-xs text-black">Este campo es obligatorio.</p>}
-                </div>
-                <div className='pt-6 grid place-items-center'>
-                <label className='text-sm'>Cantidad de sesiones</label>
-                
-                    <input type="number" min={1}
-                        {...register("sessions", { required: true })}
-                        aria-invalid={errors.sessions ? "true" : "false"}
-                        className="text-black border border-black mb-2 px-2 py-1 w-full"
-                    />
-                    {errors.sessions?.type === 'required' && <p role="alert" className="text-xs text-black">Este campo es obligatorio.</p>}
-                </div>
-                </div>
-                <div className='pt-6 grid place-items-center'>
-                <label className='text-sm'>Correo electrónico de contacto</label>
-                
-                    <input type="text"
-                        {...register("email", { required: true })}
-                        aria-invalid={errors.email ? "true" : "false"}
-                        className="text-black border border-black mb-2 px-2 py-1 w-full"
-                    />
-                    {errors.email?.type === 'required' && <p role="alert" className="text-xs text-black">Este campo es obligatorio.</p>}
-                </div>
-               
-               <div className="grid grid-cols-2">
-                <div className='pt-6 grid place-items-center mr-2'>
-                <label className='text-sm'>Fechas del curso</label>
-                
-                    <input type="text"
-                        {...register("dates", { required: true })}
-                        aria-invalid={errors.dates ? "true" : "false"}
-                        className="text-black border border-black mb-2 px-2 py-1 w-full"
-                    />
-                    {errors.dates?.type === 'required' && <p role="alert" className="text-xs text-black">Este campo es obligatorio.</p>}
-                </div>
-                <div className='pt-6 grid place-items-center'>
-                <label className='text-sm'>Horario del curso</label>
-                
-                    <input type="text"
-                        {...register("hour", { required: true })}
-                        aria-invalid={errors.hour ? "true" : "false"}
-                        className="text-black border border-black mb-2 px-2 py-1 w-full"
-                    />
-                    {errors.hour?.type === 'required' && <p role="alert" className="text-xs text-black">Este campo es obligatorio.</p>}
-                </div>
-                </div>
-                <p>* Se asume que, por default, un taller siendo creado está válido (no ha pasado). </p>
-                <div className='grid place-items-center mt-8'>
-                    <button className="bg-transparent grid place-items-start border border-black py-2 px-4 mb-8 transition ease-in-out delay-100 hover:bg-black hover:text-white">
-                        <p className='font-title font-normal'>INGRESAR</p>
-                    </button>
-                </div>
-            </form>
+  const formats = [
+    "size",
+    "bold",
+    "italic",
+    "underline",
+    "list",
+    "bullet",
+    "align",
+    "link",
+  ];
+
+  return (
+    <>
+      <Navbar />
+
+      <div className="d-flex justify-content-center">{error}</div>
+
+      <br></br>
+      <form onSubmit={sumbit} className="grid justify-center grid-cols-1 mx-32">
+        <label>
+          Agregar portada (recomendación: utilice fotos de buena calidad y
+          horizontales)
+        </label>
+        <input accept="image/*" type="file" onChange={setImage} />
+
+        <ReactQuill
+          theme="snow"
+          modules={modules}
+          formats={formats}
+          className="editor-class"
+          placeholder="Aquí puedes escribir el texto completo o, si prefieres, un pequeño resumen o un extracto del texto que luego podrá ser leído en su totalidad en PDF."
+          // editorClassName="editor-class"
+          onChange={rteChange}
+        />
+
+        <div className="grid place-items-center mt-16">
+          <button className="bg-transparent grid place-items-start border border-black py-2 px-4 mb-8 transition ease-in-out delay-100 hover:bg-black hover:text-white">
+            <p className="font-title font-normal">INGRESAR</p>
+          </button>
         </div>
-        
-        </>
-    )
+      </form>
+    </>
+  );
 }
