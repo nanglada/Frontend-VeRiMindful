@@ -11,7 +11,7 @@ export default function NewsColumn({ title, text, photo, index }: Props) {
             <img src={photo}
                 className="h-48 w-full object-cover"/>
             <h1 className="text-xl my-2 text-center font-semibold">{title}</h1>
-            <p className="text-justify">{text}</p>
+            <p className="text-justify line-clamp-5">{text}</p>
         </div>
     
     );

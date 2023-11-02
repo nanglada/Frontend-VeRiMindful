@@ -17,7 +17,9 @@ export default {
       },
       colors: {
         'orange1': '#FB8500',
-        'blue1': '#219EBC'
+        'blue1': '#219EBC',
+        'blue2': "#1A7A92",
+        'orange2': "#DC7400"
       }
     },
   },
