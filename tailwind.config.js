@@ -7,6 +7,10 @@ export default {
         '128': '32rem',
         '136': '40rem'
       },
+      width: {
+        '128': '32rem',
+        '164': '60rem'
+      },
       fontFamily: {
         'logo': ['Sniglet'],
         'body': ['Cabin']

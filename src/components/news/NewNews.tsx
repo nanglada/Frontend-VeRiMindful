@@ -75,23 +75,21 @@ export default function CreatePost() {
     <>
       <Navbar />
 
-      <div className="d-flex justify-content-center">{error}</div>
-
+      <div className="grid justify-center grid-cols-1 mx-32 place-items-center mt-8">
+      <h1 className="text-2xl text-orange1 ">Agregar nuevo artículo</h1>
       <br></br>
-      <form onSubmit={sumbit} className="grid justify-center grid-cols-1 mx-32">
+      <form onSubmit={sumbit} >
         <label>
-          Agregar portada (recomendación: utilice fotos de buena calidad y
-          horizontales)
+          Agregar foto: 
         </label>
-        <input accept="image/*" type="file" onChange={setImage} />
-
+        <br/>
+        <input accept="image/*" type="file" onChange={setImage} className="mb-6 mt-1" />
+        
         <ReactQuill
           theme="snow"
           modules={modules}
           formats={formats}
-          className="editor-class"
-          placeholder="Aquí puedes escribir el texto completo o, si prefieres, un pequeño resumen o un extracto del texto que luego podrá ser leído en su totalidad en PDF."
-          // editorClassName="editor-class"
+          className="w-164 h-96"
           onChange={rteChange}
         />
 
@@ -101,6 +99,7 @@ export default function CreatePost() {
           </button>
         </div>
       </form>
+      </div>
     </>
   );
 }
