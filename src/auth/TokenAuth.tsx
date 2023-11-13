@@ -1,35 +1,29 @@
-import React, { createContext, useMemo } from 'react'
-import useLocalStorage from './useLocalStorage';
+import React, { createContext, useMemo } from "react";
+import useLocalStorage from "./useLocalStorage";
 
-  
-export const tokenAuth = createContext({})
+export const tokenAuth = createContext({});
 
 interface Props {
-  children: React.ReactNode
+  children: React.ReactNode;
 }
 
 const TokenAuthProvider = ({ children }: Props) => {
-  const [currentUser, storeUser, clearStoredUser] = useLocalStorage('user')
+  const [currentUser, storeUser, clearStoredUser] = useLocalStorage("user");
 
   const handleTokenChange = (token: string, action: string) => {
-      if (action === 'logout'){
-          clearStoredUser();
-      }
-      else {
-          storeUser(token);
-      }
+    if (action === "logout") {
+      clearStoredUser();
+    } else {
+      storeUser(token);
+    }
   };
 
   const userStatus = useMemo(
     () => ({ currentUser, handleTokenChange }),
-    [currentUser, handleTokenChange],
+    [currentUser, handleTokenChange]
   );
 
-  return (
-    <tokenAuth.Provider value={userStatus}>
-      {children}
-    </tokenAuth.Provider>
-  );
+  return <tokenAuth.Provider value={userStatus}>{children}</tokenAuth.Provider>;
 };
-  
+
 export default TokenAuthProvider;
