@@ -33,40 +33,32 @@ function Landing() {
 
   let [news, setNews] = useState([])
   let [fact, setFact] = useState([])
-  let [loadingNews, setLoadingNews] = useState(false)
-  let [loadingFact, setLoadingFact] = useState(false)
+  let [loading, setLoading] = useState(false)
 
   useEffect(() => {
-    async function fetchNews(){
+    async function fetchData(){
       try {
         let res = await axios.get("/posts", { params: { category: 'Noticias', skip: 0, take: 3 } })
         setNews(res.data)
         console.log(res.data)
-        setLoadingNews(false)
+        let res2 = await axios.get("/facts/last")
+        setFact(res2.data.data.content)
+        console.log(res2.data.data.content)
+        setLoading(false)
       }
       catch {
         console.log("rror")
       }
         
     }
-    fetchNews()
-  }, [])
-
-  useEffect(() => {
-    async function fetchFact(){
-        let res = await axios.get("/facts/last")
-        setFact(res.data.data.content)
-        console.log(res.data.data.content)
-        setLoadingFact(false)
-    }
-    fetchFact()
+    fetchData()
   }, [])
 
   return (
     <>
     <Navbar/>
     {
-      (!loadingFact && !loadingNews) ? (
+      (!loading) ? (
         <>
         <Carrousel/>
         <Courses/>
