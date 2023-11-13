@@ -3,6 +3,7 @@ import "./Landing.css";
 import Brain from "../../assets/brain-bg.png";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import useTokenAuth from "../../auth/useTokenAuth";
 
 interface Props {
   fact: any
@@ -50,7 +51,7 @@ export default function Fact({ fact }: Props) {
           ) : (
             <p className="text-justify text-lg">{fact}</p>
           )}
-          {isEditing ? null : (
+          {!token.currentUser ? null : (
             <p className="mx-16 mt-8">
               Hola Verónica. ¿Quieres cambiar el fun fact? Haz {" "}
               <span className="underline hover:font-semibold" onClick={handleEditClick}>
@@ -64,7 +65,3 @@ export default function Fact({ fact }: Props) {
     </div>
   );
 }
-function useTokenAuth(): any {
-  throw new Error("Function not implemented.");
-}
-
