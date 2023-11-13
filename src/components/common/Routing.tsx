@@ -7,6 +7,7 @@ import Courses from '../courses/Courses';
 import NewCourse from '../courses/NewCourse';
 import News from '../news/News';
 import NewNews from '../news/NewNews';
+import Login from '../auth/Login';
  
 function Routing() {
 
@@ -21,6 +22,7 @@ function Routing() {
           <Route path={"/nuevo curso"} element={<NewCourse />}/>
           <Route path={"/artículos"} element={<News />}/>
           <Route path={"/nuevo artículo"} element={<NewNews />}/>
+          <Route path={"/iniciar sesión"} element={<Login />}/>
       </Routes>
     </BrowserRouter>
   )

@@ -66,7 +66,7 @@ function Landing() {
     <>
     <Navbar/>
     {
-      (!loadingNews && !loadingFact) ? (
+      (!loadingFact && !loadingNews) ? (
         <>
         <Carrousel/>
         <Courses/>
