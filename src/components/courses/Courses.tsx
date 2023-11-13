@@ -21,7 +21,7 @@ export default function Courses(){
     }, [])
 
     async function getCourses() {
-        let res = await axios.get("http://localhost:5000/course/")
+        let res = await axios.get("http://localhost:3000/course/")
         // await setCourses(res.data)
     }
 

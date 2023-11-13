@@ -2,25 +2,34 @@ import React, { useState } from "react";
 import "./Landing.css";
 import Brain from "../../assets/brain-bg.png";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
-export default function Fact() {
-  const [funFact, setFunFact] = useState(
-    "El corazón del erizo late un promedio de 300 veces por minuto. El corazón del erizo late un promedio de 300 veces por minuto. El corazón del erizo late un promedio de 300 veces por minuto"
-  );
+interface Props {
+  fact: any
+}
+
+export default function Fact({ fact }: Props) {
+
+  const token:any = useTokenAuth();
   const [isEditing, setIsEditing] = useState(false);
   const [newFunFact, setNewFunFact] = useState("");
 
   const handleEditClick = () => {
     setIsEditing(true);
-    setNewFunFact(funFact);
+    setNewFunFact(fact);
   };
 
-  const handleSaveClick = () => {
+  const handleSaveClick = async () => {
+    try {
+      await axios.post("/facts", {headers: { "Authorization": `Bearer ${token.currentUser}` }})
+    }
+    catch (e) {
+      console.log(e)
+    }
     setIsEditing(false);
-    setFunFact(newFunFact);
   };
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: any) => {
     setNewFunFact(e.target.value);
   };
 
@@ -39,11 +48,11 @@ export default function Fact() {
               <button onClick={handleSaveClick}>Guardar</button>
             </div>
           ) : (
-            <p className="text-justify text-lg">{funFact}</p>
+            <p className="text-justify text-lg">{fact}</p>
           )}
           {isEditing ? null : (
             <p className="mx-16 mt-8">
-              Hola Verónica. ¿Quieres cambiar el fun fact? Haz{" "}
+              Hola Verónica. ¿Quieres cambiar el fun fact? Haz {" "}
               <span className="underline hover:font-semibold" onClick={handleEditClick}>
                 click aquí
               </span>
@@ -55,3 +64,7 @@ export default function Fact() {
     </div>
   );
 }
+function useTokenAuth(): any {
+  throw new Error("Function not implemented.");
+}
+
