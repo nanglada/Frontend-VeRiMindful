@@ -22,7 +22,11 @@ export default function Fact({ fact }: Props) {
 
   const handleSaveClick = async () => {
     try {
-      await axios.post("/facts", {headers: { "Authorization": `Bearer ${token.currentUser}` }})
+      console.log(token.currentUser)
+      await axios.post("/facts", {"content": newFunFact}, { 
+        headers: {"authorization" : `Bearer ${token.currentUser}`}
+      });
+      window.location.reload();
     }
     catch (e) {
       console.log(e)
@@ -46,7 +50,7 @@ export default function Fact({ fact }: Props) {
                 value={newFunFact}
                 onChange={handleInputChange}
               />
-              <button onClick={handleSaveClick}>Guardar</button>
+              <button className="ml-2" onClick={handleSaveClick}>Guardar</button>
             </div>
           ) : (
             <p className="text-justify text-lg">{fact}</p>
