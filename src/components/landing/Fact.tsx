@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Landing.css";
 import Brain from "../../assets/brain-bg.png";
-import { Link } from "react-router-dom";
 import axios from "axios";
 import useTokenAuth from "../../auth/useTokenAuth";
 
@@ -42,7 +41,7 @@ export default function Fact({ fact }: Props) {
     <div className="bg-blue1 py-12">
       <div className="lg:justify-center lg:items-center lg:flex grid place-items-center">
         <div className="lg:w-1/2 px-12">
-          <h1 className="text-3xl text-center lg:text-left font-logo">¿Lo sabías...?</h1>
+          <h1 className="text-3xl text-center lg:text-left font-logo mb-2">¿Lo sabías...?</h1>
           {isEditing ? (
             <div>
               <textarea

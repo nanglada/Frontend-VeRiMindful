@@ -2,17 +2,20 @@ import Navbar from "../page/Navbar";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
+import useTokenAuth from "../../auth/useTokenAuth";
 
 
 export default function NewCourse() {
 
     const { register, formState: { errors }, handleSubmit } = useForm();
-
+    const token:any = useTokenAuth();
     // const navigate = useNavigate();
 
     const onSubmit = async () => {
         try {
-            let res = await axios.post("/posts", register);
+            let res = await axios.post("/posts", register, { 
+                headers: {"authorization" : `Bearer ${token.currentUser}`}
+              });
             console.log("funcionó!")
             // await toast.success("Usuario registrado con éxito", {
             //     position: toast.POSITION.TOP_CENTER
